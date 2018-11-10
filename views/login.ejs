@@ -1,0 +1,58 @@
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel='stylesheet' href='/stylesheets/style.css' />
+            <title><%=title%></title>
+            
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header">
+                            <h1>Login</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <h2><%=welcome%></h2>
+                        <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo nulla, rhoncus vel ipsum dapibus, rutrum tempor nisl. Suspendisse sollicitudin rutrum est ac hendrerit. Fusce sit amet odio ut erat posuere malesuada. Sed laoreet diam urna, sed finibus tortor euismod a. Nunc quis accumsan leo. Sed posuere in orci vitae feugiat. Aliquam egestas facilisis metus eget pretium. Pellentesque non metus rhoncus, faucibus est sed, tincidunt neque. Etiam egestas luctus nibh, ut luctus ex convallis ac.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <form action="/login" method ="POST">
+                            <div class="form-group">
+                                <label for="username" class="control-label" >Username</label>
+                                <input type="text" id="username" class="form-control" name="username">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password" class="control-label">Password</label>
+                                <input type="password" name ="password" class="form-control">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg" id="buttonLogin">Login</button>
+                            <a class="btn btn-link" id ="Signuplink" href="/register">Sign-up</a>
+                        </form>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </body>
+    </html>
